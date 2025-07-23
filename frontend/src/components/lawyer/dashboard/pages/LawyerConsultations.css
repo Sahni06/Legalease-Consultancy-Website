@@ -1,0 +1,253 @@
+.lawyer-consultations {
+  padding: 20px;
+}
+
+.consultations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.consultations-header h2 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  background: white;
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.consultations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.consultation-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.consultation-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.client-info {
+  margin-bottom: 15px;
+}
+
+.client-info h4 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.client-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-btn, .reject-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.accept-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.reject-btn {
+  background: #f44336;
+  color: white;
+}
+
+.consultation-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.start-btn, .reschedule-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.start-btn {
+  background: #2196F3;
+  color: white;
+}
+
+.reschedule-btn {
+  background: #FF9800;
+  color: white;
+}
+
+.consultation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.consultation-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+}
+
+.consultation-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  color: #7f8c8d;
+}
+
+.detail-row i {
+  width: 20px;
+  margin-right: 10px;
+  color: #3498db;
+}
+
+.detail-row.notes {
+  align-items: flex-start;
+}
+
+.detail-row.notes span {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.consultation-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.consultation-actions button {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultation-actions i {
+  margin-right: 8px;
+}
+
+.start-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #27ae60;
+}
+
+.reschedule-btn {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.reschedule-btn:hover {
+  background-color: #f39c12;
+}
+
+.view-notes-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.view-notes-btn:hover {
+  background-color: #2980b9;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .consultations-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-buttons {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .filter-buttons button {
+    white-space: nowrap;
+  }
+
+  .consultations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* Adjust based on your navbar height */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a,
+  .nav-links Link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links Link:hover {
+    color: #007bff;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 1rem;
+    }
+    
+    .nav-links {
+      gap: 0.5rem;
+    }
+  }
